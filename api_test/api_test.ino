@@ -29,7 +29,6 @@ void loop()
       Serial.print("DID=");
       Serial.print(DID);
       Serial.println(";parameter=2;value=1");
-      Serial.println("-----------");
     }
     else if (read_val == 0)
     {
@@ -37,7 +36,6 @@ void loop()
       Serial.print("DID=");
       Serial.print(DID);
       Serial.println(";parameter=2;value=0");
-      Serial.println("-----------");
     }
   }
   int pot_val = map(analogRead(pot_pin), 0, 1023, 0, 255);
@@ -48,7 +46,6 @@ void loop()
     Serial.print(DID);
     Serial.print(";parameter=1;value=");
     Serial.println(pot_val);
-    Serial.println("-----------");
   }  
 }
 
